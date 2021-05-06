@@ -4,7 +4,7 @@ import path from 'path';
 import logger from 'morgan';
 const app = express();
 import dotenv from 'dotenv';
-const PORT = process.env.APP_PORT || 4000
+const PORT = process.env.PORT || 5000
 dotenv.config();
 app.use(express.json());
 const loginRouter = require('./routes/login');
