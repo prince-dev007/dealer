@@ -4,6 +4,7 @@ import path from 'path';
 import logger from 'morgan';
 const app = express();
 import dotenv from 'dotenv';
+const PORT = process.env.APP_PORT || 4000
 dotenv.config();
 app.use(express.json());
 const loginRouter = require('./routes/login');
@@ -20,5 +21,4 @@ app.use(express.static(path.join(__dirname, 'public')));
 //Login Router 
 app.use('/',loginRouter);
 app.use('/Dashboard',dashboardRouter);
-console.log(process.env);
-app.listen(process.env.APP_PORT, () => console.log(`SERVER STARTED AT PORT ${process.env.APP_PORT}`));
+app.listen(PORT, () => console.log(`SERVER STARTED AT PORT ${PORT}`));
