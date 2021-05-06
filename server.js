@@ -21,4 +21,5 @@ app.use(express.static(path.join(__dirname, 'public')));
 //Login Router 
 app.use('/',loginRouter);
 app.use('/Dashboard',dashboardRouter);
+console.log(PORT);
 app.listen(PORT);
