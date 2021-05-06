@@ -20,4 +20,5 @@ app.use(express.static(path.join(__dirname, 'public')));
 //Login Router 
 app.use('/',loginRouter);
 app.use('/Dashboard',dashboardRouter);
+console.log(process.env);
 app.listen(process.env.APP_PORT, () => console.log(`SERVER STARTED AT PORT ${process.env.APP_PORT}`));
