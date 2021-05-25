@@ -29,15 +29,15 @@
                         </div>
                         <div class="card-body pt-5">
                             <div class="p-2">
-                                <form class="form-horizontal" action="">
+                                <form class="form-horizontal" action="" id="userLogin">
                                     <div class="mb-3">
                                         <label class="form-label" for="username">Username</label>
-                                        <input type="text" class="form-control" id="username" placeholder="Enter username">
+                                        <input type="text" name="uname" class="form-control" id="username" placeholder="Enter username">
                                     </div>
 
                                     <div class="mb-3">
                                         <label class="form-label" for="userpassword">Password</label>
-                                        <input type="password" class="form-control" id="userpassword"
+                                        <input type="password" name="password" class="form-control" id="userpassword"
                                         placeholder="Enter password">
                                     </div>
 
@@ -71,7 +71,7 @@
             </div>
         </div>
     </div>
-
+    <script> const baseUrl = '<%-  baseUrl -%>' </script>
     <script src="javascripts/jquery.min.js"></script>
     <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="libs/metismenu/metisMenu.min.js"></script>
@@ -79,5 +79,7 @@
     <script src="libs/node-waves/waves.min.js"></script>
     <script src="libs/jquery-sparkline/jquery.sparkline.min.js"></script>
     <script src="javascripts/app.js"></script> 
+    <script src="javascripts/dashboard.js"></script> 
+
 </body>
 </html>

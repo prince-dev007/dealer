@@ -3,8 +3,9 @@ const router = express.Router();
 
 //Render Login Page from View Folder
 router.get('/', function(req, res, next) {
-    res.render('login');
-});
+    const baseUrl = req.protocol + '://' + req.headers.host + '/';
+    res.render('login',{baseUrl});
 
+});
 
 module.exports = router;
